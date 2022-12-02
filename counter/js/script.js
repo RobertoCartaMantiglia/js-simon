@@ -4,3 +4,7 @@ const pause = document.getElementById('pause');
 const reset = document.getElementById('reset');
 
 
+
+start.addEventListener("click", function(){
+    
+})
