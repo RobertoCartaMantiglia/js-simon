@@ -4,5 +4,18 @@
   font-size: 4em;
   padding: 10px;
 }
+.timer-container div{
+  width: 100px;
+  height: 100px;
+  padding-top: 1rem;
+  margin-right: 5px;
+  border-radius: 0.7rem;
+  border: 2px solid black;
+  background-color: aqua;
+}
+#timer-cell5,
+#timer-cell4{
+  color: orange;
+}
 
 
