@@ -1,16 +1,20 @@
 // crea un bottone che esprima quante volte tu lo abbia cliccato 
 
 
-let count = 0;
+let counter = 0;
 const playButton = document.querySelector("button");
-let gameOver = false;
 
 
 playButton.addEventListener("click", function(){
-    count ++;    
-    playButton.innerHTML = `Play (${count})`;
-
-    if(!gameOver){
-        
+    if(counter < 10 ){
+        counter ++;
+        playButton.innerHTML = `Play (${counter})`;
+        console.log(counter);   
+    } else {
+        setTimeout(()=>{
+            counter = 0;
+            playButton.innerHTML = `Play (${counter})`;
+        }, 3 *1000)       
     }
 })
+
